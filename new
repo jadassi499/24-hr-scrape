@@ -1,0 +1,49 @@
+from selenium import webdriver
+
+from webdriver_manager.chrome import ChromeDriverManager
+
+import threading
+
+import time
+
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+
+final = driver.get("https://axossitecore.prod.axosbank.com/")
+
+html = driver.page_source
+
+htmls = driver.page_source
+
+file = open("test", "w", encoding='utf-8')
+
+files = open("tests", "w", encoding='utf-8')
+
+test1 = file.write(html)
+
+test12 = files.write(htmls)
+
+
+def run():
+#perform both tests
+        test1
+
+        test12
+#print comparison
+        print(test == tests)
+#while true continue loop
+        while True:
+            #timer begins and program runs
+            t.start()
+
+
+
+
+
+t = threading.Timer(1.0, run)
+
+#programs first run
+
+t.start()
+
+driver.close()
